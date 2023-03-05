@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="apple-tauch-icon" type="image/png" href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+    <link rel="shortcut icon" type="image/x-icon" href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <title>AudioPlayer Neumorphism</title>
+    
+</head>
+<body>
+    <div class="container">
+        <div class="player">
+            <div class="player__controls">
+                <div class="player__btn player__btn--small" id="previous">
+                    <i class="fas fa-arrow-left"></i>
+                </div>
+                <h5 class="player__title">Playing now</h5>
+                <div class="player__btn player__btn--small " id="icon-menu">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+
+            <div class="player__album">
+                <img src="scale.jpg" alt="Album Cover" class="player__img">
+            </div>
+
+            <h2 class="player__artist">La era de hielo</h2>
+            <h3 class="player__song">Send me on my way</h3>
+            
+            <input type="range" value="20" min="0" class="player__level" id="range">
+
+            <!--<div class="audio-duration">
+                <div class="start">00:01</div>
+                <div class="end">04:30</div>
+            </div>-->
+
+            <audio class="player__audio" controls id="audio">
+                <source src="black eyes peas - la era del hielo - send me on my way.mp3" type="audio/mpeg">
+            </audio>
+
+            <div class="player__controls">
+                <div class="player__btn player__btn--medium" id="backward">
+                    <i class="fas fa-backward"></i>
+                </div>
+                
+                <div class="player__btn player__btn--medium blue play" id="play">
+                    <i class="fas fa-play play-btn" ></i>
+                    <i class="fas fa-pause pause-btn hide" hidden></i>
+                </div>
+
+                <div class="player__btn player__btn--medium" id="forward">
+                    <i class="fas fa-forward"></i>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jcarousel/0.3.1/jquery.jcarousel.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
